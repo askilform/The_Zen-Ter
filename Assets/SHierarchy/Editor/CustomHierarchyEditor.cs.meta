@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c2b9fb367993b8c41832366f776d00a6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296499
+  packageName: Smart Hierarchy
+  packageVersion: 1.3.3
+  assetPath: Assets/SHierarchy/Editor/CustomHierarchyEditor.cs
+  uploadId: 763391

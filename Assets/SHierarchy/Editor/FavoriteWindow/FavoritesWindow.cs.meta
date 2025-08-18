@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 10aff3d4effbb404e8b074aab013f828
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_VisualTreeAsset: {fileID: 9197481963319205126, guid: 9efef31871ce267489ca935eb921b329,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296499
+  packageName: Smart Hierarchy
+  packageVersion: 1.3.3
+  assetPath: Assets/SHierarchy/Editor/FavoriteWindow/FavoritesWindow.cs
+  uploadId: 763391
