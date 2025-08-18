@@ -40,3 +40,5 @@ MonoBehaviour:
     - GlobalObjectId_V1-2-8124e5870f4fd4c779e7a5f994e84ad1-1232184903-0
   - sceneName: EnemyTesting
     objectIds: []
+  - sceneName: Askil_Gym
+    objectIds: []
