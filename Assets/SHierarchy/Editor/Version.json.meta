@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d0c3fc34ea9df064ea30be4d1b8666dd
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296499
+  packageName: Smart Hierarchy
+  packageVersion: 1.3.3
+  assetPath: Assets/SHierarchy/Editor/Version.json
+  uploadId: 763391

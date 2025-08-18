@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: bece0f040d895e6489ec46e09f4c5119
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296499
+  packageName: Smart Hierarchy
+  packageVersion: 1.3.3
+  assetPath: Assets/SHierarchy/Editor/PinnedObjectsWindow.cs
+  uploadId: 763391

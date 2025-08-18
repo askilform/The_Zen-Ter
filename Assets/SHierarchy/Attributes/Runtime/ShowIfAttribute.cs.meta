@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 611025c4ab49e384cb9626d2fc0d0a1f
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296499
+  packageName: Smart Hierarchy
+  packageVersion: 1.3.3
+  assetPath: Assets/SHierarchy/Attributes/Runtime/ShowIfAttribute.cs
+  uploadId: 763391

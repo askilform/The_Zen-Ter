@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: dd7ff20911925ac4790ec9272359e6fa
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296499
+  packageName: Smart Hierarchy
+  packageVersion: 1.3.3
+  assetPath: Assets/SHierarchy/Attributes/Editor/ConditionalDrawer.cs
+  uploadId: 763391

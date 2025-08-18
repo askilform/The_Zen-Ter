@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 343ca803de8d93c419c050dca01906f1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296499
+  packageName: Smart Hierarchy
+  packageVersion: 1.3.3
+  assetPath: Assets/SHierarchy/Demo/Prefabs/Child_Error.prefab
+  uploadId: 763391

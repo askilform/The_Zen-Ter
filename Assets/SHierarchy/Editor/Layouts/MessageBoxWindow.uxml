@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="root" style="height: auto;">
+        <ui:Label name="titleLabel" />
+        <ui:Label name="errorsLabel" />
+        <ui:Label name="warningsLabel" />
+    </ui:VisualElement>
+</ui:UXML>
