@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9896256d14cd4e346961df5867c8db83
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4890085278179872738
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296499
+  packageName: Smart Hierarchy
+  packageVersion: 1.3.3
+  assetPath: Assets/SHierarchy/Demo/Scene/New Lighting Settings.lighting
+  uploadId: 763391

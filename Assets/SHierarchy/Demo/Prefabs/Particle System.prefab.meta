@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 15f38cb5d0716b64e9eead2a23551bc9
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296499
+  packageName: Smart Hierarchy
+  packageVersion: 1.3.3
+  assetPath: Assets/SHierarchy/Demo/Prefabs/Particle System.prefab
+  uploadId: 763391

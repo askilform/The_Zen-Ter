@@ -1,0 +1,69 @@
+/* Ensure the root element and scroll view take the full available space */
+.scrollView {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+/* Title styling */
+.title {
+    font-size: 16px;
+    -unity-font-style: bold;
+    margin-bottom: 10px;
+}
+
+/* Container styling for errors and warnings */
+.errorsContainer, .warningsContainer {
+    margin-top: 10px;
+}
+
+/* Individual message box styling */
+.messageBox {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8; /* Light background */
+}
+
+/* Error message box styling */
+.errorItem {
+    color: #a30f0f; /* Red color for errors */
+    background-color: #fdecea; /* Light red background */
+    font-size: 14px;
+    -unity-text-align: middle-center;
+    border-width: 2px;
+    border-color: #d32f2f;
+}
+
+/* Warning message box styling */
+.warningItem {
+    color: #cd8000; /* Amber color for warnings */
+    background-color: #fff8e1; /* Light amber background */
+    font-size: 14px;
+    -unity-text-align: middle-center;
+    border-width: 2px;
+    border-color: #ffa000;
+}
+
+/* Icon styling */
+.icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+/* Message text styling */
+.messageText {
+    flex-grow: 1;
+    white-space: normal;  /* Allow text to wrap */
+    flex-wrap: wrap;
+    overflow: visible;    /* Ensure the text isn't cut off */
+}
+.noMessages {
+    font-size: 14px;
+    color: #888; /* Gray color for placeholder text */
+    padding: 5px;
+    -unity-text-align: middle-center;
+    margin-top: 10px;
+}

@@ -1,0 +1,45 @@
+/* FloatingInspectorWindow.uss */
+
+.scroll-view {
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Ensure scroll bars appear when content overflows */
+}
+
+.component-box {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+}
+
+.component-header {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.component-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: transparent; /* Transparent background */
+}
+
+.component-title {
+    font-size: 14px;
+    font-weight: bold;
+    flex: 1; /* Allow the title to take up available space */
+}
+
+.inspector-container {
+    margin-top: 5px;
+    display: flex; /* Ensure the container is displayed */
+}
+
+.inspector-content {
+    flex-direction: column;
+    width: 100%;
+}

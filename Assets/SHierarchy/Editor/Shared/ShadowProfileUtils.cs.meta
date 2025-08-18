@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: f25142e97ab34ff0bd4411ed689b51ae
+timeCreated: 1726049286
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296499
+  packageName: Smart Hierarchy
+  packageVersion: 1.3.3
+  assetPath: Assets/SHierarchy/Editor/Shared/ShadowProfileUtils.cs
+  uploadId: 763391

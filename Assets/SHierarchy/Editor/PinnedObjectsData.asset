@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7f14bf5c5ceb041b4fb83ee0d9cae7, type: 3}
+  m_Name: PinnedObjectsData
+  m_EditorClassIdentifier: 
+  scenesData:
+  - sceneName: menuPrincipal
+    objectIds:
+    - GlobalObjectId_V1-2-c131f7580f733b149b0af6794549f3e7-2134842686-0
+    - GlobalObjectId_V1-2-c131f7580f733b149b0af6794549f3e7-1194952890-0
+    - GlobalObjectId_V1-2-c131f7580f733b149b0af6794549f3e7-1778011121-0
+    - GlobalObjectId_V1-2-c131f7580f733b149b0af6794549f3e7-4059074262449268083-0
+    - GlobalObjectId_V1-2-c131f7580f733b149b0af6794549f3e7-1920767361-0
+    - GlobalObjectId_V1-2-c131f7580f733b149b0af6794549f3e7-8806542464374251412-0
+    - GlobalObjectId_V1-2-c131f7580f733b149b0af6794549f3e7-1404584942-0
+    - GlobalObjectId_V1-2-c131f7580f733b149b0af6794549f3e7-629151074-0
+    - GlobalObjectId_V1-2-c131f7580f733b149b0af6794549f3e7-985023319192703190-0
+    - GlobalObjectId_V1-2-c131f7580f733b149b0af6794549f3e7-1848644875455818606-0
+    - GlobalObjectId_V1-2-c131f7580f733b149b0af6794549f3e7-8806542464718846355-0
+  - sceneName: HierarchyS
+    objectIds:
+    - GlobalObjectId_V1-2-8124e5870f4fd4c779e7a5f994e84ad1-219498514-0
+    - GlobalObjectId_V1-2-8124e5870f4fd4c779e7a5f994e84ad1-4488658317325672759-3049307050681447278
+    - GlobalObjectId_V1-2-8124e5870f4fd4c779e7a5f994e84ad1-1524170074-0
+    - GlobalObjectId_V1-2-8124e5870f4fd4c779e7a5f994e84ad1-298469772-0
+  - sceneName: SHierarchy
+    objectIds:
+    - GlobalObjectId_V1-2-8124e5870f4fd4c779e7a5f994e84ad1-572355160-0
+    - GlobalObjectId_V1-2-8124e5870f4fd4c779e7a5f994e84ad1-421353892-0
+    - GlobalObjectId_V1-2-8124e5870f4fd4c779e7a5f994e84ad1-276643084-0
+    - GlobalObjectId_V1-2-8124e5870f4fd4c779e7a5f994e84ad1-1232184903-0

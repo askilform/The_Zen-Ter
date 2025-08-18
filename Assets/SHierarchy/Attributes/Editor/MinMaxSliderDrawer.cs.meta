@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 06dac09e279aacf42b9fe98a2ce53ed9
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296499
+  packageName: Smart Hierarchy
+  packageVersion: 1.3.3
+  assetPath: Assets/SHierarchy/Attributes/Editor/MinMaxSliderDrawer.cs
+  uploadId: 763391
