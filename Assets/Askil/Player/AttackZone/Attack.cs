@@ -1,5 +1,7 @@
+
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Attack : MonoBehaviour
 {
@@ -7,16 +9,17 @@ public class Attack : MonoBehaviour
     private int ChargeLevel = 0;
     private Collider ringCollider;
 
-    public TextMeshProUGUI ChargeTimeTXT;
-    public TextMeshProUGUI ChargeLevelTXT;
+    public Image ChargeColour;
+    public TextMeshProUGUI ChargeTXT;
+
     public AudioSource riseSFX;
     public AudioSource smackSFX;
 
     private void Start()
     {
         ringCollider = GetComponent<Collider>();
-        ChargeTimeTXT.text = "Charged For: " + Mathf.Round(ChargedFor * 100f) / 100f;
-        ChargeLevelTXT.text = "ChargeLevel: " + ChargeLevel;
+        ChargeColour.color = Color.white;
+        ChargeTXT.text = "";
     }
 
     private void Update()
@@ -25,23 +28,28 @@ public class Attack : MonoBehaviour
         {
             ChargedFor = 0f;
             ChargeLevel = 1;
+            ChargeColour.color = Color.yellow;
+            ChargeTXT.text = "Wait";
             riseSFX.Play();
         }
 
         if (Input.GetMouseButton(0))
         {
             ChargedFor += Time.deltaTime;
-            ChargeTimeTXT.text = "Charged For: " + Mathf.Round(ChargedFor * 100f) / 100f;
-            ChargeLevelTXT.text = "ChargeLevel: " + ChargeLevel;
+            
 
-            if (ChargedFor >= 1f && ChargeLevel < 2)
+            if (ChargedFor >= 2f && ChargeLevel < 2)
             {
                 ChargeLevel = 2;
+                ChargeColour.color = Color.green;
+                ChargeTXT.text = "Go!";
             }
 
-            if (ChargedFor >= 2f && ChargeLevel < 3)
+            if (ChargedFor >= 3f && ChargeLevel < 3)
             {
                 ChargeLevel = 3;
+                ChargeColour.color = Color.red;
+                ChargeTXT.text = "No Dont!";
             }
         }
 
@@ -49,8 +57,8 @@ public class Attack : MonoBehaviour
         {
             ChargedFor = 0f;
             ChargeLevel = 1;
-            ChargeTimeTXT.text = "Charged For: " + Mathf.Round(ChargedFor * 100f) / 100f;
-            ChargeLevelTXT.text = "ChargeLevel: " + ChargeLevel;
+            ChargeColour.color = Color.white;
+            ChargeTXT.text = "";
             riseSFX.Stop();
             smackSFX.Play();
         }
