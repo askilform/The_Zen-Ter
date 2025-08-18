@@ -34,12 +34,12 @@ public class Attack : MonoBehaviour
             ChargeTimeTXT.text = "Charged For: " + Mathf.Round(ChargedFor * 100f) / 100f;
             ChargeLevelTXT.text = "ChargeLevel: " + ChargeLevel;
 
-            if (ChargedFor >= 2f && ChargeLevel < 2)
+            if (ChargedFor >= 1f && ChargeLevel < 2)
             {
                 ChargeLevel = 2;
             }
 
-            if (ChargedFor >= 4f && ChargeLevel < 3)
+            if (ChargedFor >= 2f && ChargeLevel < 3)
             {
                 ChargeLevel = 3;
             }
