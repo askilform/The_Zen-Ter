@@ -24,7 +24,7 @@ public class Attack : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetButtonDown("Charge"))
         {
             ChargedFor = 0f;
             ChargeLevel = 1;
@@ -33,10 +33,10 @@ public class Attack : MonoBehaviour
             riseSFX.Play();
         }
 
-        if (Input.GetMouseButton(0))
+        if (Input.GetButton("Charge"))
         {
             ChargedFor += Time.deltaTime;
-            
+
 
             if (ChargedFor >= 2f && ChargeLevel < 2)
             {
@@ -53,7 +53,7 @@ public class Attack : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetButtonUp("Charge"))
         {
             ChargedFor = 0f;
             ChargeLevel = 1;

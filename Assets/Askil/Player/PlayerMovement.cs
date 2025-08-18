@@ -4,7 +4,6 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;           // Movement speed
     public float gravity = -9.81f;     // Gravity strength
-    public float jumpHeight = 1.5f;    // Jump force
     public float rotationSpeed = 10f;  // How fast the player rotates
 
     private CharacterController controller;
