@@ -4,10 +4,12 @@ using UnityEngine.SceneManagement;
 
 public class Death : MonoBehaviour
 {
-    IEnumerator Start()
+    private void Update()
     {
-        yield return new WaitForSeconds(2);
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(currentSceneName);
+        if (Input.GetButtonDown("Go"))
+        {
+            string currentSceneName = SceneManager.GetActiveScene().name;
+            SceneManager.LoadScene(currentSceneName);
+        }
     }
 }
