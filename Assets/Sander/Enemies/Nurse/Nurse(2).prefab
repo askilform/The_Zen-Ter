@@ -176,6 +176,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3540725318260445992, guid: 15dcb573fe6ce98469809a6003126867, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 018024b4b3cc1ab41b984114884305b9, type: 2}
     - target: {fileID: 919132149155446097, guid: 15dcb573fe6ce98469809a6003126867, type: 3}
       propertyPath: m_Name
       value: Nurse_Model
@@ -184,6 +188,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: abc2bcc913fbc00449b302e6c8e50ab6, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 15dcb573fe6ce98469809a6003126867, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -303,7 +311,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 1
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!136 &3317301539427432065
