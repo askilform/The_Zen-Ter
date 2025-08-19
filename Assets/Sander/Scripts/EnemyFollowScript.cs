@@ -5,11 +5,12 @@ using UnityEngine.AI;
 
 public class EnemyPathfinding : MonoBehaviour
 {
-    public Transform player;
     public float StunTime = 3;
 
+    private Transform player;
     private NavMeshAgent agent;
     private bool isStunned = false;
+    private Zen_Meter zenScript;
 
     void Start()
     {
@@ -19,6 +20,8 @@ public class EnemyPathfinding : MonoBehaviour
         {
             player = GameObject.FindGameObjectWithTag("Player").transform;
         }
+
+        zenScript = GameObject.Find("Zen-Meter").GetComponent<Zen_Meter>();
     }
 
     void Update()
@@ -31,6 +34,17 @@ public class EnemyPathfinding : MonoBehaviour
     
     public IEnumerator Stun()
     {
+        zenScript.ChangeZenLevel(+10);
+
+        isStunned = true;
+        yield return new WaitForSeconds(StunTime);
+        isStunned = false;
+    }
+
+    public IEnumerator SmackedTooHard()
+    {
+        zenScript.ChangeZenLevel(-10);
+
         isStunned = true;
         yield return new WaitForSeconds(10);
         isStunned = false;

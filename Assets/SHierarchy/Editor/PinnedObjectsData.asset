@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd7f14bf5c5ceb041b4fb83ee0d9cae7, type: 3}
   m_Name: PinnedObjectsData
   m_EditorClassIdentifier: 
-  scenesData: []
+  scenesData:
+  - sceneName: Askil_Gym
+    objectIds: []

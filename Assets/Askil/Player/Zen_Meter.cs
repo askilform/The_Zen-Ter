@@ -5,13 +5,14 @@ using UnityEngine.UI;
 
 public class Zen_Meter : MonoBehaviour
 {
-    public float ZenLeft = 100;
     private bool hasDied = false;
 
+    public float ZenLeft = 100;
     public float Reduction_Multiplier = 1;
     public Image ZenBar;
     public GameObject death_Prefab;
     public GameObject Owner;
+    public AudioSource IncreaseSFX;
 
     private void Start()
     {
@@ -49,7 +50,19 @@ public class Zen_Meter : MonoBehaviour
     }
 
     public void ChangeZenLevel (float add)
-    {
 
+    {
+        ZenLeft += add;
+        if (add > 0)
+        {
+            IncreaseSFX.Play();
+        }
+
+        if (ZenLeft > 100)
+        {
+            ZenLeft = 100;
+        }
+
+        ZenBar.fillAmount = ZenLeft * 0.01f;
     }
 }
