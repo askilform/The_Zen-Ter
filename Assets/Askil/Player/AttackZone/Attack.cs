@@ -1,4 +1,6 @@
 
+using NUnit.Framework;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,6 +10,7 @@ public class Attack : MonoBehaviour
     private float ChargedFor;
     private int ChargeLevel = 0;
     private Collider ringCollider;
+    [SerializeField] private List<GameObject> kidsInsideRing = new List<GameObject>();
 
     public Image ChargeColour;
     public TextMeshProUGUI ChargeTXT;
@@ -61,6 +64,22 @@ public class Attack : MonoBehaviour
             ChargeTXT.text = "";
             riseSFX.Stop();
             smackSFX.Play();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<EnemyPathfinding>() != null)
+        {
+            kidsInsideRing.Add(other.gameObject);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.GetComponent<EnemyPathfinding>() != null)
+        {
+            kidsInsideRing.Remove(other.gameObject);
         }
     }
 }
