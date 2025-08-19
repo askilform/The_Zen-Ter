@@ -1,10 +1,11 @@
 using System.Collections;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Zen_Meter : MonoBehaviour
 {
-    private float ZenLeft = 100;
+    public float ZenLeft = 100;
     private bool hasDied = false;
 
     public float Reduction_Multiplier = 1;
@@ -40,5 +41,15 @@ public class Zen_Meter : MonoBehaviour
         hasDied = true;
         Instantiate (death_Prefab, Owner.transform.position, Owner.transform.rotation);
         Destroy(Owner.gameObject);
+    }
+
+    public void ChangeMultiplier (float add)
+    {
+        Reduction_Multiplier += add;
+    }
+
+    public void ChangeZenLevel (float add)
+    {
+
     }
 }

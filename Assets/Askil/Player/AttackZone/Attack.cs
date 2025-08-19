@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
+using Unity.VisualScripting;
 
 public class Attack : MonoBehaviour
 {
@@ -17,6 +19,9 @@ public class Attack : MonoBehaviour
 
     public AudioSource riseSFX;
     public AudioSource smackSFX;
+
+    public Zen_Meter zenScript;
+
 
     private void Start()
     {
@@ -58,6 +63,31 @@ public class Attack : MonoBehaviour
 
         if (Input.GetButtonUp("Charge"))
         {
+
+            if (ChargeLevel == 2)
+            {
+                foreach (GameObject kids in kidsInsideRing)
+                {
+                    EnemyPathfinding KidMovement = kids.GetComponent<EnemyPathfinding>();
+                    KidMovement.StartCoroutine(KidMovement.Stun());
+                }
+
+                zenScript.ZenLeft += 10;
+                zenScript.ZenBar.fillAmount = zenScript.ZenLeft * 0.01f;
+            }
+
+            if (ChargeLevel == 3)
+            {
+                foreach (GameObject kids in kidsInsideRing)
+                {
+                    EnemyPathfinding KidMovement = kids.GetComponent<EnemyPathfinding>();
+                    KidMovement.StartCoroutine(KidMovement.Stun());
+                }
+
+                zenScript.ZenLeft -= 10;
+                zenScript.ZenBar.fillAmount = zenScript.ZenLeft * 0.01f;
+            }
+
             ChargedFor = 0f;
             ChargeLevel = 1;
             ChargeColour.color = Color.white;
