@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class HealingZone : MonoBehaviour
+public class DrainZone : MonoBehaviour
 {
-    private Zen_Meter ZenScript;
+    private Zen_Meter zenScript;
     private bool playerInside = false;
     public float drainRate = 0.2f;  // Amount to drain per second
 
@@ -11,7 +11,7 @@ public class HealingZone : MonoBehaviour
         GameObject zenGO = GameObject.Find("Zen-Meter");
         if (zenGO != null)
         {
-            ZenScript = zenGO.GetComponent<Zen_Meter>();
+            zenScript = zenGO.GetComponent<Zen_Meter>();
         }
         else
         {
@@ -41,7 +41,7 @@ public class HealingZone : MonoBehaviour
     {
         if (playerInside && zenScript != null)
         {
-            ZenScript.ChangeMultiplier(-drainRate * Time.deltaTime);
+            zenScript.ChangeMultiplier(-drainRate * Time.deltaTime);
         }
     }
 }
