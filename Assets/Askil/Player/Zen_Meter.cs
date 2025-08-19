@@ -29,12 +29,19 @@ public class Zen_Meter : MonoBehaviour
         ZenLeft -= 1 * Reduction_Multiplier;
         yield return new WaitForSeconds(1f);
         ZenBar.fillAmount = ZenLeft * 0.01f;
-        RestartReduction();
+
+        if (ZenLeft > 100)
+        {
+            ZenLeft = 100;
+        }
+
 
         if (ZenLeft < 0 && !hasDied)
         {
             Death();
         }
+
+        RestartReduction();
     }
 
     private void Death()
