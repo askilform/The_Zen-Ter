@@ -24,7 +24,7 @@ public class DrainZone : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Player entered healing zone.");
-            playerInside = true;
+            zenScript.Reduction_Multiplier += 0.5f;
         }
     }
 
@@ -33,15 +33,8 @@ public class DrainZone : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Player exited healing zone.");
-            playerInside = false;
+            zenScript.Reduction_Multiplier -= 0.5f;
         }
     }
 
-    private void Update()
-    {
-        if (playerInside && zenScript != null)
-        {
-            zenScript.ChangeMultiplier(-drainRate * Time.deltaTime);
-        }
-    }
 }
