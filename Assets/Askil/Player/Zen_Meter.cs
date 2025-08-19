@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Zen_Meter : MonoBehaviour
 {
     private bool hasDied = false;
+    private bool Suspence = false;
 
     public float ZenLeft = 100;
     public float Reduction_Multiplier = 1;
@@ -13,6 +14,7 @@ public class Zen_Meter : MonoBehaviour
     public GameObject death_Prefab;
     public GameObject Owner;
     public AudioSource IncreaseSFX;
+    public AudioSource SuspenceSFX;
 
     private void Start()
     {
@@ -30,11 +32,18 @@ public class Zen_Meter : MonoBehaviour
         yield return new WaitForSeconds(1f);
         ZenBar.fillAmount = ZenLeft * 0.01f;
 
+        if (Reduction_Multiplier > 2 && !Suspence)
+        {
+            SuspenceSFX.Play();
+            Suspence = true;
+            yield return new WaitForSeconds(3f);
+            Suspence = false;
+        }
+
         if (ZenLeft > 100)
         {
             ZenLeft = 100;
         }
-
 
         if (ZenLeft < 0 && !hasDied)
         {
