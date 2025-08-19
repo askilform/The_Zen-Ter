@@ -11,6 +11,9 @@ public class EnemyPatrolChase : MonoBehaviour
     public float stopChaseRange = 15f;
     public float waitTime = 2f;
 
+    // New: teleport target for the player
+    public Transform playerRespawnPoint;
+
     private NavMeshAgent agent;
     private Transform currentPatrolTarget;
     private bool chasingPlayer = false;
@@ -33,25 +36,21 @@ public class EnemyPatrolChase : MonoBehaviour
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-        // Start chasing if close enough
         if (!chasingPlayer && distanceToPlayer <= chaseRange)
         {
             chasingPlayer = true;
         }
-        // Stop chasing if too far
         else if (chasingPlayer && distanceToPlayer >= stopChaseRange)
         {
             chasingPlayer = false;
             GoToClosestPatrolPoint();
         }
 
-        // Chase behavior
         if (chasingPlayer)
         {
             agent.SetDestination(player.position);
             FaceTarget(player.position);
         }
-        // Patrol behavior
         else
         {
             if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance && !waiting)
@@ -91,6 +90,23 @@ public class EnemyPatrolChase : MonoBehaviour
         {
             Quaternion lookRotation = Quaternion.LookRotation(direction);
             transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+        }
+    }
+
+    // New method for detecting collision with player
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            if (playerRespawnPoint != null)
+            {
+                // Teleport player to respawn point
+                collision.gameObject.transform.position = playerRespawnPoint.position;
+            }
+            else
+            {
+                Debug.LogWarning("Player respawn point not assigned!");
+            }
         }
     }
 }
