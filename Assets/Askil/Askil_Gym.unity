@@ -824,6 +824,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kids
       objectReference: {fileID: 0}
+    - target: {fileID: 7771668737891233331, guid: 99c2fa77f4c018849b509fe8bacf7ac5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
