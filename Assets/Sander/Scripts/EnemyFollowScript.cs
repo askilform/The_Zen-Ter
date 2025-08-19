@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class EnemyPathfinding : MonoBehaviour
 {
     public float StunTime = 3;
+    public Animator Animator;
 
     private Transform player;
     private NavMeshAgent agent;
@@ -26,6 +27,7 @@ public class EnemyPathfinding : MonoBehaviour
 
     void Update()
     {
+        Animator.SetBool("Stunned", isStunned);
         if (player != null && !isStunned)
         {
             agent.SetDestination(player.position);
