@@ -16,7 +16,7 @@ public class HealingZone : MonoBehaviour
             zenScript.ChangeMultiplier (-2f);
         }
     }
-
+    
     private void OnTriggerExit(Collider other)
     {
         if ((other.gameObject.tag == "Player"))
