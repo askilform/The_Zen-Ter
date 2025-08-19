@@ -13,6 +13,7 @@ public class EnemyPatrolChase : MonoBehaviour
 
     // New: teleport target for the player
     public Transform playerRespawnPoint;
+    public Animator animator;
 
     private NavMeshAgent agent;
     private Transform currentPatrolTarget;
@@ -35,6 +36,8 @@ public class EnemyPatrolChase : MonoBehaviour
     void Update()
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+        animator.SetBool("Chasing", chasingPlayer);
+        animator.SetBool("Waiting", waiting);
 
         if (!chasingPlayer && distanceToPlayer <= chaseRange)
         {
