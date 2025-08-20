@@ -32,6 +32,8 @@ public class Zen_Meter : MonoBehaviour
         yield return new WaitForSeconds(1f);
         ZenBar.fillAmount = ZenLeft * 0.01f;
 
+        RestartReduction();
+
         if (Reduction_Multiplier > 2 && !Suspence)
         {
             SuspenceSFX.Play();
@@ -50,7 +52,6 @@ public class Zen_Meter : MonoBehaviour
             Death();
         }
 
-        RestartReduction();
     }
 
     private void Death()
