@@ -10,10 +10,12 @@ public class Distraction1 : MonoBehaviour
     private Zen_Meter zen_Meter;
     private bool playerClose;
     private Distract_Manager distract_Manager;
+    private AudioSource Sound;
 
     private void Start()
     {
         distract_Manager = GameObject.Find("Distraction-Manager").GetComponent<Distract_Manager>();
+        Sound = GetComponent<AudioSource>();
         zen_Meter = GameObject.Find("Zen-Meter").GetComponent<Zen_Meter>();
         ActiveImage.SetActive(false);
         HighlightImage.SetActive(false);
@@ -58,6 +60,7 @@ public class Distraction1 : MonoBehaviour
         Active = true;
         ActiveImage.SetActive(true);
         zen_Meter.ChangeMultiplier(addToMultiplier);
+        Sound.Play();
     }
 
     public void DeActivate()
@@ -67,5 +70,6 @@ public class Distraction1 : MonoBehaviour
         HighlightImage.SetActive(false);
         distract_Manager.StartCoroutine(distract_Manager.DelayAndActivate());
         zen_Meter.ChangeMultiplier(-addToMultiplier);
+        Sound.Stop();
     }
 }

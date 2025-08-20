@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 7516119816773685619}
   - component: {fileID: 7289169663332161461}
   - component: {fileID: 6368274405885968640}
+  - component: {fileID: 1314808831287343219}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -359,6 +360,14 @@ MonoBehaviour:
   gravity: -9.81
   rotationSpeed: 10
   rotationOffset: 90
+--- !u!81 &1314808831287343219
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858274222549164440}
+  m_Enabled: 1
 --- !u!1 &1533892153067379324
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,7 +1234,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: fee2a646b90b35f43ab8bd714d247af1, type: 3}
   m_Resource: {fileID: 8300000, guid: fee2a646b90b35f43ab8bd714d247af1, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0

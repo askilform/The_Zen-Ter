@@ -34,7 +34,7 @@ public class Zen_Meter : MonoBehaviour
 
         RestartReduction();
 
-        if (Reduction_Multiplier > 2 && !Suspence)
+        if (Reduction_Multiplier > 3 && !Suspence)
         {
             SuspenceSFX.Play();
             Suspence = true;
