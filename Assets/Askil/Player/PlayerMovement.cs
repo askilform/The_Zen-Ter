@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5f;           // Movement speed
     public float gravity = -9.81f;     // Gravity strength
     public float rotationSpeed = 10f;  // How fast the player rotates
+    public float rotationOffset = 90f; // Offset in degrees (adjust to your map)
 
     private CharacterController controller;
     private Vector3 velocity;
@@ -33,13 +34,16 @@ public class PlayerMovement : MonoBehaviour
 
         if (move.magnitude >= 0.1f)
         {
+            // Apply rotation offset to direction
+            Quaternion offsetRotation = Quaternion.Euler(0, rotationOffset, 0);
+            Vector3 adjustedMove = offsetRotation * move;
+
             // Rotate toward movement direction
-            Quaternion targetRotation = Quaternion.LookRotation(move);
+            Quaternion targetRotation = Quaternion.LookRotation(adjustedMove);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
             // Apply movement
-            controller.Move(move * speed * Time.deltaTime);
+            controller.Move(adjustedMove * speed * Time.deltaTime);
         }
-
     }
 }
