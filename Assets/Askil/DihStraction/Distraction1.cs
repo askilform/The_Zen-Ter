@@ -9,12 +9,30 @@ public class Distraction1 : MonoBehaviour
 
     private Zen_Meter zen_Meter;
     private bool playerClose;
+    private Distract_Manager distract_Manager;
 
     private void Start()
     {
+        distract_Manager = GameObject.Find("Distraction-Manager").GetComponent<Distract_Manager>();
         zen_Meter = GameObject.Find("Zen-Meter").GetComponent<Zen_Meter>();
         ActiveImage.SetActive(false);
         HighlightImage.SetActive(false);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "AttackZone")
+        {
+            playerClose = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.name == "AttackZone")
+        {
+            playerClose = false;
+        }
     }
 
     private void Update()
@@ -47,5 +65,6 @@ public class Distraction1 : MonoBehaviour
         Active = false;
         ActiveImage.SetActive(false);
         HighlightImage.SetActive(false);
+        distract_Manager.StartCoroutine(distract_Manager.DelayAndActivate());
     }
 }
