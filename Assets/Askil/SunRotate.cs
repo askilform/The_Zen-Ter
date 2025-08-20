@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class SunRotate : MonoBehaviour
 {
-    public float rotateSpeed;
-    private Vector3 addRotation = new Vector3(1f, 0f, 0f);
+    [SerializeField] public float rotationSpeed; // Degrees per second
+    [SerializeField] private Vector3 rotationAxis = Vector3.right; // Default: rotate around X axis
 
-    private void Update()
+    void Update()
     {
-        transform.Rotate(addRotation * rotateSpeed * Time.deltaTime);
+        transform.Rotate(rotationAxis * rotationSpeed * Time.deltaTime, Space.Self);
     }
 }
