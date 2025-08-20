@@ -66,5 +66,6 @@ public class Distraction1 : MonoBehaviour
         ActiveImage.SetActive(false);
         HighlightImage.SetActive(false);
         distract_Manager.StartCoroutine(distract_Manager.DelayAndActivate());
+        zen_Meter.ChangeMultiplier(-addToMultiplier);
     }
 }

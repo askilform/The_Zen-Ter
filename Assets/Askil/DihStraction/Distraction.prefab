@@ -326,4 +326,4 @@ MonoBehaviour:
   Active: 0
   ActiveImage: {fileID: 3518082692123350440}
   HighlightImage: {fileID: 2445223199501510033}
-  addToMultiplier: 0
+  addToMultiplier: 2

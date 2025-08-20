@@ -11,6 +11,7 @@ public class Distract_Manager : MonoBehaviour
     public GameObject PanickUI;
 
     [SerializeField] private int DistractionAmount;
+    private Zen_Meter zen_Meter;
 
     private void Start()
     {
@@ -31,6 +32,8 @@ public class Distract_Manager : MonoBehaviour
     public IEnumerator DelayAndActivate()
     {
         PanickUI.SetActive(false);
+
+
         yield return new WaitForSeconds(Random.Range(minimumTimeSpace - 1, maximumTimeSpace));
 
         Distraction1 ChosenDistractionScript = distractionsInScene[Random.Range(0, DistractionAmount)].GetComponent<Distraction1>();
