@@ -51,7 +51,7 @@ public class Attack : MonoBehaviour
                 ChargeTXT.text = "Go!";
             }
 
-            if (ChargedFor >= 2.3f && ChargeLevel < 3)
+            if (ChargedFor >= 2.5f && ChargeLevel < 3)
             {
                 ChargeLevel = 3;
                 ChargeColour.color = Color.red;
