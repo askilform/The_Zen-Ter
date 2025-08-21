@@ -645,6 +645,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: KidsSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 8350426953984166993, guid: 233e410219e204544b35d5072278c423, type: 3}
+      propertyPath: maxSpawnDelay
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350426953984166993, guid: 233e410219e204544b35d5072278c423, type: 3}
+      propertyPath: minSpawnDelay
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1971,6 +1979,14 @@ PrefabInstance:
     - target: {fileID: 2278750592375838632, guid: 233e410219e204544b35d5072278c423, type: 3}
       propertyPath: m_Name
       value: KidsSpawner (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350426953984166993, guid: 233e410219e204544b35d5072278c423, type: 3}
+      propertyPath: maxSpawnDelay
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350426953984166993, guid: 233e410219e204544b35d5072278c423, type: 3}
+      propertyPath: minSpawnDelay
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15821,6 +15837,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: KidsSpawner (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8350426953984166993, guid: 233e410219e204544b35d5072278c423, type: 3}
+      propertyPath: maxSpawnDelay
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350426953984166993, guid: 233e410219e204544b35d5072278c423, type: 3}
+      propertyPath: minSpawnDelay
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17254,6 +17278,14 @@ PrefabInstance:
     - target: {fileID: 2278750592375838632, guid: 233e410219e204544b35d5072278c423, type: 3}
       propertyPath: m_Name
       value: KidsSpawner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350426953984166993, guid: 233e410219e204544b35d5072278c423, type: 3}
+      propertyPath: maxSpawnDelay
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350426953984166993, guid: 233e410219e204544b35d5072278c423, type: 3}
+      propertyPath: minSpawnDelay
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
