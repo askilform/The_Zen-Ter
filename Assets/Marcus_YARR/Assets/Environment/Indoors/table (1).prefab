@@ -9,6 +9,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24.979
       objectReference: {fileID: 0}
@@ -52,6 +56,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: table (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4253280567622488715, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a6d66ae7b4056004da2bfd728030780d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
