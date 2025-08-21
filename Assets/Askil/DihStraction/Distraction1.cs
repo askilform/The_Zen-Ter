@@ -6,6 +6,7 @@ public class Distraction1 : MonoBehaviour
     public GameObject ActiveImage;
     public GameObject HighlightImage;
     public float addToMultiplier;
+    public AudioSource TurnOffAudio;
 
     private Zen_Meter zen_Meter;
     private bool playerClose;
@@ -71,5 +72,6 @@ public class Distraction1 : MonoBehaviour
         distract_Manager.StartCoroutine(distract_Manager.DelayAndActivate());
         zen_Meter.ChangeMultiplier(-addToMultiplier);
         Sound.Stop();
+        TurnOffAudio.Play();
     }
 }
