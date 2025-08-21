@@ -13,6 +13,7 @@ public class Attack : MonoBehaviour
     private int ChargeLevel = 0;
     private Collider ringCollider;
     [SerializeField] private List<GameObject> kidsInsideRing = new List<GameObject>();
+    private int GreenLightTime;
 
     public Image ChargeColour;
     public TextMeshProUGUI ChargeTXT;
@@ -37,20 +38,21 @@ public class Attack : MonoBehaviour
             ChargeColour.color = Color.black;
             ChargeTXT.text = "Wait";
             riseSFX.Play();
+            GreenLightTime = Random.Range(2, 5);
         }
 
         if (Input.GetButton("Charge"))
         {
             ChargedFor += Time.deltaTime;
 
-            if (ChargedFor >= 2f && ChargeLevel < 2)
+            if (ChargedFor >= GreenLightTime && ChargeLevel < 2)
             {
                 ChargeLevel = 2;
                 ChargeColour.color = Color.green;
                 ChargeTXT.text = "Go!";
             }
 
-            if (ChargedFor >= 2.3f && ChargeLevel < 3)
+            if (ChargedFor >= GreenLightTime +0.5 && ChargeLevel < 3)
             {
                 ChargeLevel = 3;
                 ChargeColour.color = Color.red;
