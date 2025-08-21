@@ -34,7 +34,7 @@ public class Attack : MonoBehaviour
         {
             ChargedFor = 0f;
             ChargeLevel = 1;
-            ChargeColour.color = Color.yellow;
+            ChargeColour.color = Color.black;
             ChargeTXT.text = "Wait";
             riseSFX.Play();
         }
@@ -43,7 +43,6 @@ public class Attack : MonoBehaviour
         {
             ChargedFor += Time.deltaTime;
 
-
             if (ChargedFor >= 2f && ChargeLevel < 2)
             {
                 ChargeLevel = 2;
@@ -51,7 +50,7 @@ public class Attack : MonoBehaviour
                 ChargeTXT.text = "Go!";
             }
 
-            if (ChargedFor >= 2.5f && ChargeLevel < 3)
+            if (ChargedFor >= 2.3f && ChargeLevel < 3)
             {
                 ChargeLevel = 3;
                 ChargeColour.color = Color.red;
