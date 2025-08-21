@@ -98,13 +98,12 @@ public class EnemyPatrolChase : MonoBehaviour
 
     // New method for detecting collision with player
 
-    private void OnTriggerEnter(Collider collision)
+    private void OnTriggerStay(Collider collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             if (playerRespawnPoint != null)
             {
-                // Teleport player to respawn point
                 collision.gameObject.transform.position = playerRespawnPoint.position;
             }
             else
@@ -113,6 +112,10 @@ public class EnemyPatrolChase : MonoBehaviour
             }
         }
     }
+
+
 }
+
+
 
 
