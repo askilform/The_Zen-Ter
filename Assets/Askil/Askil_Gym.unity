@@ -1961,7 +1961,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 5
-  rotationAxis: {x: 1, y: 0, z: 0}
 --- !u!1 &1755048323
 GameObject:
   m_ObjectHideFlags: 0
@@ -2476,6 +2475,22 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1206849083}
+    - target: {fileID: 2358115298405232968, guid: e2cfe997844aaed4a9125bc0db9f616d, type: 3}
+      propertyPath: introDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358115298405232968, guid: e2cfe997844aaed4a9125bc0db9f616d, type: 3}
+      propertyPath: startOffset.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358115298405232968, guid: e2cfe997844aaed4a9125bc0db9f616d, type: 3}
+      propertyPath: startOffset.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358115298405232968, guid: e2cfe997844aaed4a9125bc0db9f616d, type: 3}
+      propertyPath: startOffset.z
+      value: -200
+      objectReference: {fileID: 0}
     - target: {fileID: 2358115298405232968, guid: e2cfe997844aaed4a9125bc0db9f616d, type: 3}
       propertyPath: rotationOffset
       value: 0
