@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2357921902842318195}
   - component: {fileID: 266122704514477886}
   - component: {fileID: 9208608218542285415}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HealingZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,6 +133,10 @@ PrefabInstance:
     - target: {fileID: 1632659334546840, guid: bbd1860d44f6c7546aad605f3666475f, type: 3}
       propertyPath: m_Name
       value: FireArea
+      objectReference: {fileID: 0}
+    - target: {fileID: 1632659334546840, guid: bbd1860d44f6c7546aad605f3666475f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4256412018972890, guid: bbd1860d44f6c7546aad605f3666475f, type: 3}
       propertyPath: m_LocalPosition.x

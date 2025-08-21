@@ -25,6 +25,7 @@ public class EnemyPathfinding : MonoBehaviour
         }
 
         zenScript = GameObject.Find("Zen-Meter").GetComponent<Zen_Meter>();
+        agent.speed = Random.Range(1, 5);
     }
 
     void Update()
