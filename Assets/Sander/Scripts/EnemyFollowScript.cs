@@ -7,6 +7,7 @@ public class EnemyPathfinding : MonoBehaviour
 {
     public float StunTime = 3;
     public Animator Animator;
+    public ParticleSystem SlapParticles;
 
     private Transform player;
     private NavMeshAgent agent;
@@ -37,8 +38,8 @@ public class EnemyPathfinding : MonoBehaviour
     public IEnumerator Stun()
     {
         zenScript.ChangeZenLevel(+10);
-
         isStunned = true;
+        SlapParticles.Play();
         yield return new WaitForSeconds(StunTime);
         isStunned = false;
     }
