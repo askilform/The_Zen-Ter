@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -10,10 +11,13 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController controller;
     private Vector3 velocity;
     private bool isGrounded;
+    private float StoodStillTime;
+    private TextMeshProUGUI zenTXT;
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        zenTXT = GameObject.Find("ZenTXT").GetComponent<TextMeshProUGUI>();
     }
 
     void Update()
@@ -44,6 +48,22 @@ public class PlayerMovement : MonoBehaviour
 
             // Apply movement
             controller.Move(adjustedMove * speed * Time.deltaTime);
+            StoodStillTime = 0;
+        }
+
+        else
+        {
+            StoodStillTime += Time.deltaTime;
+        }
+
+        if (StoodStillTime > 10)
+        {
+            zenTXT.text = "MOVE YOUR ASS!";
+        }
+
+        else
+        {
+            zenTXT.text = "Zen - Meter";
         }
     }
 }
