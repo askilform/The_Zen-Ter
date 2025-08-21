@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1777394983324713368}
   - component: {fileID: 5077011294131419630}
   - component: {fileID: 2357921902842318195}
-  - component: {fileID: 6246383944921773789}
   - component: {fileID: 266122704514477886}
+  - component: {fileID: 9208608218542285415}
   m_Layer: 0
   m_Name: HealingZone
   m_TagString: Untagged
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 11.154, y: 1.02551, z: 11.154}
+  m_LocalScale: {x: 11.154, y: 0.237303, z: 11.154}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6349581377333573480}
@@ -43,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111082122915581988}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2357921902842318195
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -89,8 +89,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6246383944921773789
-BoxCollider:
+--- !u!114 &266122704514477886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111082122915581988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1bcef1e70a944c4aa00c001d6e5e02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &9208608218542285415
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -108,20 +120,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &266122704514477886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 111082122915581988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1bcef1e70a944c4aa00c001d6e5e02f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Radius: 0.48
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1001 &6345890390311153586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -204,7 +204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198137211002769400, guid: bbd1860d44f6c7546aad605f3666475f, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 2.8
+      value: 4.23
       objectReference: {fileID: 0}
     - target: {fileID: 198137211002769400, guid: bbd1860d44f6c7546aad605f3666475f, type: 3}
       propertyPath: InitialModule.startSizeY.scalar
