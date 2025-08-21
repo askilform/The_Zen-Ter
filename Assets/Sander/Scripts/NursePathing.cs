@@ -97,7 +97,8 @@ public class EnemyPatrolChase : MonoBehaviour
     }
 
     // New method for detecting collision with player
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -113,3 +114,5 @@ public class EnemyPatrolChase : MonoBehaviour
         }
     }
 }
+
+
