@@ -460,10 +460,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fec04c8bb5409f54ba5f12ebe1002b42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StunTime: 3
+  StunTime: 5
   Animator: {fileID: 2426367555056271733}
   SlapParticles: {fileID: 656598699598030845}
-  ZenImpact: 5
+  ZenImpact: 3
 --- !u!82 &425516089193632370
 AudioSource:
   m_ObjectHideFlags: 0

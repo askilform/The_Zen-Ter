@@ -1157,6 +1157,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: KidsSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 8350426953984166993, guid: 233e410219e204544b35d5072278c423, type: 3}
+      propertyPath: maxSpawnDelay
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350426953984166993, guid: 233e410219e204544b35d5072278c423, type: 3}
+      propertyPath: minSpawnDelay
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25116,14 +25124,110 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8513424388201257645, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7474137702352084075, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7175373085166498029, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -4564183130768418457, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -4454650110108681806, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -3957782524123411102, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -3211437797376988136, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -2752204379018723741, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -2328411686548971133, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -2128057476688443938, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -432016795015843419, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 521557951356341355, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
       propertyPath: m_Name
       value: table
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375662360169820954, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1508462862970573235, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2563959399220215793, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048159317177752187, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3893190598205154700, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4253280567622488715, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: c65d739336de9cc4880b4b0bbb99cef1, type: 2}
+    - target: {fileID: 4315185020494314474, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542711848749746342, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610985882802496080, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7701778573488020226, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750397243111347764, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646261233372888331, guid: e1d1f2aee7aea2a4493bf7d1ae0a24ed, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27830,6 +27934,14 @@ PrefabInstance:
     - target: {fileID: 2278750592375838632, guid: 233e410219e204544b35d5072278c423, type: 3}
       propertyPath: m_Name
       value: KidsSpawner (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350426953984166993, guid: 233e410219e204544b35d5072278c423, type: 3}
+      propertyPath: maxSpawnDelay
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350426953984166993, guid: 233e410219e204544b35d5072278c423, type: 3}
+      propertyPath: minSpawnDelay
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30566,6 +30678,14 @@ PrefabInstance:
     - target: {fileID: 2278750592375838632, guid: 233e410219e204544b35d5072278c423, type: 3}
       propertyPath: m_Name
       value: KidsSpawner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350426953984166993, guid: 233e410219e204544b35d5072278c423, type: 3}
+      propertyPath: maxSpawnDelay
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350426953984166993, guid: 233e410219e204544b35d5072278c423, type: 3}
+      propertyPath: minSpawnDelay
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -45099,7 +45219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1230347056043129883, guid: 81a0d969fd869f045a821f71a7c604ec, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4614687934657630438, guid: 81a0d969fd869f045a821f71a7c604ec, type: 3}
       propertyPath: m_LocalPosition.x
