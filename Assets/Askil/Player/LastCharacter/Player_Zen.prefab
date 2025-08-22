@@ -999,6 +999,7 @@ MonoBehaviour:
   kidsInsideRing: []
   ChargeColour: {fileID: 9144077584327781023}
   ChargeTXT: {fileID: 2986734386194303120}
+  animator: {fileID: 5691162137547059007}
   riseSFX: {fileID: 5281829016713302810}
   smackSFX: {fileID: 7681575980216681171}
 --- !u!1 &6153936764930259283
@@ -1702,5 +1703,10 @@ AudioListener:
 --- !u!4 &1737049267905295685 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0816e098edffd3f4e935f6f42acb56e5, type: 3}
+  m_PrefabInstance: {fileID: 2274744862104720046}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5691162137547059007 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 0816e098edffd3f4e935f6f42acb56e5, type: 3}
   m_PrefabInstance: {fileID: 2274744862104720046}
   m_PrefabAsset: {fileID: 0}

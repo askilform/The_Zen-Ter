@@ -17,6 +17,7 @@ public class Attack : MonoBehaviour
 
     public Image ChargeColour;
     public TextMeshProUGUI ChargeTXT;
+    public Animator animator;
 
     public AudioSource riseSFX;
     public AudioSource smackSFX;
@@ -87,6 +88,7 @@ public class Attack : MonoBehaviour
             ChargeTXT.text = "";
             riseSFX.Stop();
             smackSFX.Play();
+            animator.SetTrigger("Attack");
         }
     }
 
