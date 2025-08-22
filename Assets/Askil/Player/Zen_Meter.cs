@@ -20,7 +20,7 @@ public class Zen_Meter : MonoBehaviour
     {
         StartCoroutine(ReduceZen());
     }
-
+    
     private void RestartReduction()
     {
         StartCoroutine(ReduceZen());
@@ -54,7 +54,7 @@ public class Zen_Meter : MonoBehaviour
 
     }
 
-    private void Death()
+    public void Death()
     {
         hasDied = true;
         Instantiate (death_Prefab, Owner.transform.position, Owner.transform.rotation);
