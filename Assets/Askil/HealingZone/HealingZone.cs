@@ -3,6 +3,7 @@ using UnityEngine;
 public class HealingZone : MonoBehaviour
 {
     private Zen_Meter zenScript;
+    public float impact;
 
     private void Start()
     {
@@ -13,7 +14,7 @@ public class HealingZone : MonoBehaviour
     {
         if ((other.gameObject.tag == "Player"))
         {
-            zenScript.ChangeMultiplier (-2f);
+            zenScript.ChangeMultiplier (-impact);
         }
     }
     
@@ -21,7 +22,7 @@ public class HealingZone : MonoBehaviour
     {
         if ((other.gameObject.tag == "Player"))
         {
-            zenScript.ChangeMultiplier (2f);
+            zenScript.ChangeMultiplier (impact);
         }
     }
 }
