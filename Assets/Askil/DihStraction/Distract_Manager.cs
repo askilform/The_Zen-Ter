@@ -56,7 +56,7 @@ public class Distract_Manager : MonoBehaviour
             }
         }
     }
-   
+    
     public IEnumerator DelayAndActivate()
     {
         PanickUI.SetActive(false);
