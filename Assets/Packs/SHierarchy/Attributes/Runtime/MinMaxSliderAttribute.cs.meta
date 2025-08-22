@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 1d344fc5ee01752418b49082aaba7c63
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296499
+  packageName: Smart Hierarchy
+  packageVersion: 1.3.3
+  assetPath: Assets/SHierarchy/Attributes/Runtime/MinMaxSliderAttribute.cs
+  uploadId: 763391

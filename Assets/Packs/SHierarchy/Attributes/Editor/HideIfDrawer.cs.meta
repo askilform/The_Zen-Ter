@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: d6c887b0872a29241a4076703572ad4d
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296499
+  packageName: Smart Hierarchy
+  packageVersion: 1.3.3
+  assetPath: Assets/SHierarchy/Attributes/Editor/HideIfDrawer.cs
+  uploadId: 763391

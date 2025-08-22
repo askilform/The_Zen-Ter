@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 65d71c0dcc388ad42bf07b559d3918d1
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296499
+  packageName: Smart Hierarchy
+  packageVersion: 1.3.3
+  assetPath: Assets/SHierarchy/Attributes/Runtime/RedOnlyAttribute.cs
+  uploadId: 763391

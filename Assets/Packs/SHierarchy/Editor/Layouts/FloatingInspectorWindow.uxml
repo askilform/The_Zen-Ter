@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" engine="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="VisualElement" focusable="true" class="root" style="background-color: rgba(255, 40, 40, 0); visibility: visible; overflow: visible; align-items: flex-start; justify-content: center; flex-direction: column;">
+        <ui:ScrollView name="scrollView" class="scroll-view">
+            <ui:VisualElement name="content" class="content" />
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

@@ -187,6 +187,7 @@ GameObject:
   - component: {fileID: 7579652771697506829}
   - component: {fileID: 643536796086129698}
   - component: {fileID: 4627444974859315351}
+  - component: {fileID: 5748526132295901384}
   m_Layer: 0
   m_Name: Distraction
   m_TagString: Untagged
@@ -343,7 +344,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: e83fd9ac1896e3743a3dec9f5bb5ea84, type: 3}
   m_Resource: {fileID: 8300000, guid: e83fd9ac1896e3743a3dec9f5bb5ea84, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.8
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -427,6 +428,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!170 &5748526132295901384
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6699009835253388780}
+  m_Enabled: 1
+  m_DistortionLevel: 0.5
 --- !u!1001 &1572532237189800001
 PrefabInstance:
   m_ObjectHideFlags: 0

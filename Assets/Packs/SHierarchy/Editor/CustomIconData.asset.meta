@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0c6a8fd70ac400f4785413a86a246a21
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296499
+  packageName: Smart Hierarchy
+  packageVersion: 1.3.3
+  assetPath: Assets/SHierarchy/Editor/CustomIconData.asset
+  uploadId: 763391
